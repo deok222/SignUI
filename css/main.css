@@ -21,6 +21,8 @@ body {
   height: 600px;
   background-color: white;
   display: flex;
+  border-radius: 20px;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.2);
 }
 
 .contents {
@@ -31,11 +33,18 @@ body {
   flex-direction: column;
   padding: 70px 107px 80px 107px;
   box-sizing: border-box;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
 }
 
 .photo {
   width: 320px;
   height: 600px;
+  background: url(../images/BG.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 /* top */
@@ -68,6 +77,12 @@ body {
   padding: 5px;
   border-radius: 50%;
   border: 1px solid #1d2e36;
+  transition: all 0.2s;
+}
+
+.top .social a:hover {
+  background-color: #000;
+  color: white;
 }
 
 /* form */
@@ -83,6 +98,10 @@ body {
   display: flex;
   justify-content: space-between;
   margin-bottom: 44px;
+}
+
+.form_area .agree a {
+  color: #ff5455;
 }
 
 .form_area input[type="text"],
@@ -101,9 +120,30 @@ body {
 
 input:focus {
   outline: none;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
 }
 
 .agree label {
   display: flex;
   align-items: center;
+}
+
+.btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn_fill {
+  background-color: #ff5455;
+  color: white;
+  font-size: 15px;
+  height: 45px;
+}
+
+.btn_line {
+  background-color: white;
+  color: #ff5455;
+  font-size: 15px;
+  height: 45px;
 }
