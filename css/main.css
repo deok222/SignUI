@@ -51,6 +51,11 @@ body {
   color: #f28283;
 }
 
+.top p {
+  font-size: 12px;
+  margin-bottom: 25px;
+}
+
 .top .social {
   display: flex;
   justify-content: center;
@@ -73,4 +78,32 @@ body {
 
 .form_area .agree {
   font-size: 12px;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 44px;
+}
+
+.form_area input[type="text"],
+.form_area input[type="password"] {
+  height: 39px;
+  margin-bottom: 15px;
+  padding: 0px 21px;
+  border-radius: 5px;
+  border: 1px solid #d0d9da;
+  background-color: #e1e8ec;
+}
+
+::placeholder {
+  color: #d0d9da;
+}
+
+input:focus {
+  outline: none;
+}
+
+.agree label {
+  display: flex;
+  align-items: center;
 }
